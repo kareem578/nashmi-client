@@ -119,15 +119,15 @@ function submitForm(event) {
   const formData = {
     name: document.querySelector('input[name="name"]').value,
     email: document.querySelector('input[name="email"]').value,
-    countryCode: document.querySelector('select[name="countryCode"]').value,
     phone: document.querySelector('input[name="phone"]').value,
+    media: document.querySelector('input[name="media"]').value,
     projectType: document.querySelector('select[name="projectType"]').value,
     budget: document.querySelector('select[name="budget"]').value,
     message: document.querySelector('textarea[name="message"]').value,
   }
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbwp0BP51hl1oDTHUj7UpiTGq3Oqqt9eLZg4r5o_raNT1dxRGEz8nrObsKca0CWnyulf/exec",
+    "https://script.google.com/macros/s/AKfycbzU14TB3bW0IJZvWt-lu0-KtAB5Tey2JbawXs2lDX5uaItKMpV6ic3kNLdTPhwzWh3y/exec",
     {
       method: "POST",
       body: JSON.stringify(formData),

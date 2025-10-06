@@ -7,22 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">نشمي الحريجي</div>
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">من أنا</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#contact">تواصل معي</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <section class="hero" id="home">
         <div class="hero-content">
@@ -155,11 +139,11 @@
             <h2 class="animate-on-scroll">النتائج المثبتة</h2>
             <div class="results-grid">
                 <div class="result-card animate-scale">
-                    <h4 data-count="500">0</h4>
+                    <h4 data-count="213">0</h4>
                     <p>حملة إعلانية ناجحة</p>
                 </div>
                 <div class="result-card animate-scale">
-                    <h4 data-count="200">0</h4>
+                    <h4 data-count="61">0</h4>
                     <p>عميل حقق نمو ملحوظ</p>
                 </div>
                 <div class="result-card animate-scale">
@@ -167,7 +151,7 @@
                     <p>متوسط زيادة المبيعات</p>
                 </div>
                 <div class="result-card animate-scale">
-                    <h4 data-count="5">0</h4>
+                    <h4 data-count="11">0</h4>
                     <p>سنوات خبرة عملية</p>
                 </div>
             </div>
@@ -230,49 +214,28 @@
     <div id="contactModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h3>تواصل معي الآن</h3>
             <form id="contactForm" onsubmit="submitForm(event)">
                 <div class="form-group">
-                    <label for="name">الاسم بالكامل:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">معلومات عامة</label>
+                    <input type="text" id="name" name="name" required placeholder="الاسم بالكامل">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">البريد الإلكتروني:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required placeholder="البريد الإلكتروني">
                 </div>
 
                 <div class="form-group">
-                    <label for="countryCode">رقم الجوال:</label>
                     <div class="phone-input-group">
-                        <select id="countryCode" name="countryCode" required>
-                            <option value="+966">🇸🇦 +966</option>
-                            <option value="+971">🇦🇪 +971</option>
-                            <option value="+965">🇰🇼 +965</option>
-                            <option value="+974">🇶🇦 +974</option>
-                            <option value="+973">🇧🇭 +973</option>
-                            <option value="+968">🇴🇲 +968</option>
-                            <option value="+20">🇪🇬 +20</option>
-                            <option value="+962">🇯🇴 +962</option>
-                            <option value="+961">🇱🇧 +961</option>
-                            <option value="+212">🇲🇦 +212</option>
-                            <option value="+213">🇩🇿 +213</option>
-                            <option value="+216">🇹🇳 +216</option>
-                            <option value="+964">🇮🇶 +964</option>
-                            <option value="+963">🇸🇾 +963</option>
-                            <option value="+967">🇾🇪 +967</option>
-                            <option value="+249">🇸🇩 +249</option>
-                            <option value="+218">🇱🇾 +218</option>
-                            <option value="+970">🇵🇸 +970</option>
-                        </select>
-                        <input type="tel" id="phone" name="phone" required placeholder="XX XXX XXXX">
+                        <input type="text" id="phone" name="phone" required placeholder="رقم الجوال" >
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="projectType">نوع مشروعك أو متجرك:</label>
-                    <select id="projectType" name="projectType" required>
-                        <option value="">اختر نوع المشروع</option>
+                    <input type="text" id="name" name="media" required placeholder="رابط المتجر/السوشيال">
+                </div>
+
+                <div class="form-group">
+                    <select id="projectType" name="projectType" required >
                         <option value="ecommerce">تجارة إلكترونية (متجر)</option>
                         <option value="service">خدمي</option>
                         <option value="product">منتج رقمي</option>
@@ -281,7 +244,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="budget">الميزانية التقريبية للحملات الإعلانية شهرياً:</label>
                     <select id="budget" name="budget" required>
                         <option value="">اختر ميزانية</option>
                         <option value="low">500$ - 1500$</option>
@@ -290,10 +252,9 @@
                         <option value="very_high">أكثر من 5000$</option>
                     </select>
                 </div>
-                
+
                 <div class="form-group">
-                    <label for="message">كيف يمكنني مساعدتك؟ (تفاصيل مختصرة عن التحدي الذي تواجهه)</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="1" required placeholder="كيف يمكنني مساعدتك؟ (تفاصيل مختصرة عن التحدي الذي تواجهه)"></textarea>
                 </div>
 
                 <button type="submit" class="submit-button">أرسل الآن</button>

@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tajawal", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   color: #ffffff;
   line-height: 1.6;
@@ -729,22 +729,23 @@ nav {
   flex-wrap: wrap;
 }
 
+/* Reduced stat-box size by decreasing padding and font sizes */
 .stat-box {
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(0, 0, 0, 0.5) 100%);
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
   border: 2px solid rgba(255, 215, 0, 0.3);
 }
 
 .stat-box h4 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #ffd700;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.2rem;
 }
 
 .stat-box p {
   color: #cccccc;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 
 /* Added animation classes for scroll-triggered animations */
